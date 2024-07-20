@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(0, 217, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+h1,h2{
+    text-align: center;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: rgb(60, 255, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: black 0 3px 3px 1px;
+    cursor: pointer;
+}
+.expenses-list{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: rgb(255, 145, 0);
+    color: #fff;
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color: rgba(221, 16, 16, 0.836);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
