@@ -58,11 +58,13 @@ tfoot td{
     border-radius: 4px;
     cursor: pointer;
 }
-@media only screen and(max-width:300px){
+@media only screen and(max-width:450px){
     .input-section{
         width: 100%;
+        visibility: collapse;
     }
     .expenses-list{
         width: 100%;
+        visibility: visible;
     }
 }

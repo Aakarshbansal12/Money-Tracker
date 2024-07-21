@@ -12,7 +12,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
-app.post('/add',(req,res)=>{
+app.post('/add',async(req,res)=>{
     var category_select=req.body.category_select
     var amount_input=req.body.amount_input
     var info=req.body.info
@@ -23,7 +23,7 @@ app.post('/add',(req,res)=>{
         "Info":info,
         "Date":date_input
     }
-    db.collection('user').insertOne(data,(err,collection)=>{
+     await db.collection('user').insertOne(data,(err,collection)=>{
         if(err){
             throw err;
         }
