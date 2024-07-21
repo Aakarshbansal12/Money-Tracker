@@ -58,8 +58,11 @@ tfoot td{
     border-radius: 4px;
     cursor: pointer;
 }
-@media (max-width:450px){
+@media only screen and(max-width:300px){
     .input-section{
+        width: 100%;
+    }
+    .expenses-list{
         width: 100%;
     }
 }
